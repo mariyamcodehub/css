@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .slide-spin-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+
+        }
+
+        .slide-spin {
+            width: 1080px;
+            height: 1080px;
+            background-color: #e74c3c;
+            position: absolute;
+            animation: slideSpin 5s linear infinite;
+            top: 50%;
+            color: white;
+        }
+
+        @keyframes slideSpin {
+            0% {
+                transform: translateX(-100%) rotate(0deg);
+            }
+
+            25% {
+                transform: translateX(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateX(100%) rotate(180deg);
+            }
+
+            75% {
+                transform: translateX(0) rotate(360deg);
+            }
+
+            100% {
+                transform: translateX(-100%) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide-spin-container">
+        <div class="slide-spin">
+            Kacha aam
+        </div>
+    </div>
+</body>
+
+</html>
